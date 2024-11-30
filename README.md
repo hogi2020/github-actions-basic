@@ -1,6 +1,22 @@
 # github-actions-basic
 Study github-actions for CI/CD
 
+## CI/CD에 대하여
+1. CI/CD란, Continuos integration, Continuos Deploy라는 의미
+2. 즉 테스트(test), 통합(merge), 배포(deploy) 과정을 자동화하는 것
+3. 결국 반복적인 작업을 개선하기 위해서 탄생한 개념
+4. CI/CD 툴은 GitHub Actions와 Jenkins가 있음
+5. Jenkins 사용 시, 별도의 서버에 구축을 해야한다는 단점이 있음
+6. **GitHub Actions**는 무료사용이 가능하며, 빌드용 서버가 필요없음
+
+7. (카카오엔터프라이즈에서는 Github Actions 사용중...)
+ 
+ <br>
+ 
+ ![alt text](image-2.png) 
+
+<br>
+
 ## 기본 문법
 1. .github 폴더 생성
 2. .github > workflow 폴더 생성
