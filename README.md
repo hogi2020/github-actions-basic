@@ -37,3 +37,18 @@ jobs:
       - name: Hello World 찍기
         run: echo "Hello World"
 ```
+
+- GitHub Actions에 내장된 변수값 호출
+- 값의 보안을 위한 Setting에서 Secret 변수 생성 후 호출
+```yml
+      - name: Github Actions 자체에 저장되어 있는 변수 사용해보기
+        run: |
+          echo $GITHUB_SHA
+          echo $GITHUB_REPOSITORY
+
+      - name: 아무한테 노출이 되면 안되는 값
+        run: |
+          echo ${{ secrets.MY_NAME }}
+          echo ${{ secrets.MY_HOBBY }}
+```
+![alt text](image.png)
