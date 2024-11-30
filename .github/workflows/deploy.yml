@@ -1,3 +1,4 @@
+# yml 파일 작성 시, 들여쓰기 주의!!!
 # yml 파일은 하나의 Workflow를 의미합니다.
 # name은 workflow의 이름입니다.
 name: Github Actions 실행시켜보기
@@ -29,3 +30,8 @@ jobs:
         run: |
           echo "Good moring"
           echo "bye bye"
+
+      - name: Github Actions 자체에 저장되어 있는 변수 사용해보기
+        run: |
+          echo $GITHUB_SHA
+          echo $GITHUB_REPOSITORY
